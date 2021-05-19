@@ -20,7 +20,7 @@ def add_data():
     if r_var.get() == "" or n_var.get() == "":
         messagebox.showerror("Error","All Fields are required!!")
     else:
-        mydb = a.connect(host="localhost",user="root",password="Mysql@1234",database="stud")
+        mydb = a.connect(host="localhost",user="root",password="YourPassword",database="stud")
         """ if mydb.is_connected():
                 print("Successfully Connected")
         else:
@@ -33,7 +33,7 @@ def add_data():
         mydb.close
         messagebox.showinfo("Success","Data has been added successfully!!")
 def get_data():
-    mydb = a.connect(host="localhost",user="root",password="Mysql@1234",database="stud")
+    mydb = a.connect(host="localhost",user="root",password="YourPassword",database="stud")
     cur = mydb.cursor()
     cur.execute("select * from student")
     rows = cur.fetchall()
@@ -65,7 +65,7 @@ def get_value(ev):
     address_txt.delete('1.0',END)
     address_txt.insert(END,row[6])
 def update():
-    mydb = a.connect(host="localhost",user="root",password="Mysql@1234",database="stud")
+    mydb = a.connect(host="localhost",user="root",password="YourPassword",database="stud")
     '''if mydb.is_connected():
             print("Successfully Connected")
     else:
@@ -78,7 +78,7 @@ def update():
     mydb.close
     messagebox.showinfo("Update","Successfully updated the data")
 def delete():
-    mydb = a.connect(host="localhost",user="root",password="Mysql@1234",database="stud")
+    mydb = a.connect(host="localhost",user="root",password="YourPassword",database="stud")
     cur = mydb.cursor()
     cur.execute(f"Delete from student where reg_no = {r_var.get()}")
     mydb.commit()
@@ -87,7 +87,7 @@ def delete():
     clear()
     messagebox.showinfo("Update","Successfully deleted the record")
 def search():
-    mydb = a.connect(host="localhost",user="root",password="Mysql@1234",database="stud")
+    mydb = a.connect(host="localhost",user="root",password="YourPassword",database="stud")
     cur = mydb.cursor()
     cur.execute("select * from student where "+str(search_var.get())+" LIKE '%"+str(s_var.get())+"%'")
     rows = cur.fetchall()
