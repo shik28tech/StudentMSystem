@@ -1,5 +1,7 @@
 # Student Management System
 
+## ABOUT
+
 Main Idea behind the project is to make an GUI app which will handle the student's data.
 
 What is Student Management System?
