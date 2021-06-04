@@ -29,4 +29,4 @@ I have made the project using C++ and Python.
 
 I have made an GUI application of Student Management System using Tkinter module in Python.
 
-    ![Screenshot (14)](https://user-images.githubusercontent.com/77436945/118696849-5475a500-b82c-11eb-874b-cfe21ba320ea.png)
+![Screenshot14](https://user-images.githubusercontent.com/77436945/118696849-5475a500-b82c-11eb-874b-cfe21ba320ea.png)
